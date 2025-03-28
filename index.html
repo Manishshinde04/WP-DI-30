@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresa</title>
+    <link rel="stylesheet" href="P1.CSS">
+    <style>
+        .home{
+            font-size: 1.7rem;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:#e8edf7;
+            padding:30px;
+        }
+        .navbar {
+            background-color: orange;
+            padding: 5px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 260px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+        #chatbox {
+            height: 120px;
+            overflow-y: auto;
+            padding-bottom: 10px;
+        }
+        .chat-input {
+            display: flex;
+            margin-top: 10px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 5px;
+        }
+        .chat-input button {
+            margin-left: 5px;
+            padding: 5px 10px;
+            background-color: #032051;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">CRESTA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#support">Support Team</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#tech">Tech</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="home" id="home">
+        <h1>CRESTA</h1>
+      
+        <h3><strong>Computer Regional Engineering Student & Tech Association</strong></h3>
+    </div>
+    
+    <header>
+        <div class="home2">
+            <h5>To foster a collaborative environment for students to develop technical, cultural, and leadership skills</h5>
+            <p>Fostering Technical, Cultural, and Leadership Skills in Students</p>
+        </div>
+    </header>
+    
+    <section class="teams" style="background-color:rgb(201, 219, 166);">
+        <div class="container" >
+            <h2><b>OUR TEAM</b></h2>
+            <!-- Management Team -->
+            <div class="team">
+                <h3>Management Team</h3>
+                <p>Handles logistics, planning, and operations.</p>
+                <img src="https://teambuilding.com/wp-content/uploads/2023/01/Staircase-pose.jpg" height="190px" width="150">
+                <img src="https://teambuilding.com/wp-content/uploads/2023/01/candid-poses.jpg" height="190px" width="150">
+                <img src="https://img.freepik.com/premium-photo/planning-business-close-up-man-writing-something-using-adhesive-notes-while-working-office_425904-297.jpg?semt=ais_hybrid" height="190px" width="150">
+                <img src="https://img.freepik.com/free-photo/close-up-young-colleagues-having-meeting_23-2149060259.jpg?semt=ais_hybrid" height="190px" width="150">
+            </div>
+    
+            <!-- Design Team -->
+            <div class="team">
+                <h3>Design Team</h3>
+                <p>Manages branding, graphics, and UI/UX.</p>
+                <img src="https://www.jessicajonesdesign.com/wp-content/uploads/2024/06/web-developer-branding-by-brand-designer-Jessica-Jones.jpg" height="180px" width="100">
+                <img src="https://pres.3veta.com/wp-content/uploads/2022/09/167.-Team-Branding-6-Unique-Strategies-for-Branding-Your-Remote-Team-6-1024x646.png" width="100">
+                <img src="https://www.hubspot.com/hubfs/meet-the-team.jpg" height="180px" width="100">
+                <img src="https://cdn.prod.website-files.com/666aa4fbe0e580742d2d8407/66f2c0961d3b9dd9989257e3_UX-Team-Structure_Internal-External-UX-720x367.webp" height="180px"width="100">
+            </div>
+    
+            <!-- Cultural Team -->
+            <div class="team">
+                <h3>Cultural Team</h3>
+                <p>Organizes social and cultural events.</p>
+                <img src="https://media.gettyimages.com/id/1183966535/photo/brazilian-carnival.jpg?s=612x612&w=0&k=20&c=46vrONSoZWU79-dhe_lm8NF4uF_tetAOKNS5zGcvd_Q=" height="180px" width="180">
+                <img src="https://media.gettyimages.com/id/1939499353/photo/creating-art-for-a-sustainable-future.jpg?s=612x612&w=0&k=20&c=8e3vgoSwb7absLp67LTEoi3HX5_iagmD7Xz5qFsr5I4=" height="180px" width="180">
+                <img src="https://media.istockphoto.com/id/921626264/photo/feeling-the-rhythm-in-the-drums.jpg?s=612x612&w=0&k=20&c=fm0864hKkPBVPNJMvEIGEmIAr2QKsWZ_axyDaNhtoGk=" height="180px" width="180">
+                <img src="https://media.gettyimages.com/id/671712085/photo/friends-dancing-at-festival-with-arms-in-air.jpg?s=612x612&w=0&k=20&c=TYfqjMUwiapmTl_MKIiH8hDAiRbzFXhssh9B99_Am5k=" height="180px" width="180">
+            </div>
+    
+            <!-- Social Media Team -->
+            <div class="team">
+                <h3>Social Media Team</h3>
+                <p>Manages online presence and promotions.</p>
+                <img src="https://media.istockphoto.com/id/603859690/photo/social-media-marketing.jpg?s=612x612&w=0&k=20&c=SA_P1zSzHKJjHgVe1vdL9tUqzGzKGYeWTlUkoOnhPok=" height="190px" width="100">
+                <img src="https://media.istockphoto.com/id/1421308951/photo/marketing-team-at-work.jpg?s=612x612&w=0&k=20&c=Suc4iLlGg69o_65ix57qnCe3bEIXYwK07_4J0e1lH_o=" height="190px" width="100">
+                <img src="https://media.istockphoto.com/id/1203879971/photo/a-busy-day-in-the-office.jpg?s=612x612&w=0&k=20&c=dMqn-yX5Y-QBVzqNZ5sPaGAj-3kDLyfN8E35W2D2Seg=" height="190px" width="100">
+                <img src="https://media.istockphoto.com/id/1193729015/photo/smm-manager-smiling-to-camera-standing-in-busy-creative-office.jpg?s=612x612&w=0&k=20&c=yBQ66IX0FyEB6RyLJ9yNTWq4iLToBvxjBTXWEovNNaE=" height="188px" width="100">
+            </div>
+    
+            <!-- Finance Team -->
+            <div class="team">
+                <h3>Finance Team</h3>
+                <p>Handles budgeting and sponsorships.</p>
+                <img src="https://media.istockphoto.com/id/922512798/photo/business-presentation.jpg?s=612x612&w=0&k=20&c=Maz7uI6ube8VRjrlel-HMCNS3jO3LoKWwcNQaQkeSQs=" height="190px" width="100">
+                <img src="https://media.gettyimages.com/id/1455167765/photo/meeting-the-new-business-partner.jpg?s=612x612&w=0&k=20&c=q3YcDR2XCj9DzHuzQbV3xKhzrsfX-FSmzy1o9IvXI_g=" height="190px" width="100">
+                <img src="https://img.freepik.com/free-photo/three-smiling-mix-raced-professionals-discussing-new-project-conference-table_1262-13053.jpg?semt=ais_hybrid" height="190px" width="100">
+                <img src="https://media.istockphoto.com/id/1398807044/photo/technology-is-a-part-of-every-modern-meeting.jpg?s=612x612&w=0&k=20&c=Rv5WWM2o7wcfaVT6M79t3wMN0nSKkmh1NdfaV4CnkaY=" height="180px" width="100">
+            </div>
+    
+            <!-- Sports Team -->
+            <div class="team">
+                <h3>Sports Team</h3>
+                <p>Organizes sports events and competitions.</p>
+                <img src="https://media.gettyimages.com/id/665406627/photo/womens-rugby-team-walking-together-towards-sunset.jpg?s=612x612&w=0&k=20&c=aQ3uPjtMGg5mHnLMBplUDJ-CIRxyWfg0WaH6z-zBET8=" height="190px" width="100">
+                <img src="https://media.gettyimages.com/id/AA022056/photo/soccer-team-celebrating.jpg?s=612x612&w=0&k=20&c=LRULp1ovKYLqLGfB6GaYRGqv7uuJHGdZxx_AJsgDVyA=" height="190px" width="100">
+                <img src="https://images.squarespace-cdn.com/content/v1/59566d23d482e91cad320fd9/1628042027882-LE7BO2JMG071L3IVS9Y6/dchs-basketball-girls-2019-20-team-web.jpg" height="190px" width="100">
+                <img src="https://media.gettyimages.com/id/925909788/photo/basketball-team.jpg?s=612x612&w=0&k=20&c=lSMabrtDZqRVmTC0iKXdxSQ7UA_dP4gtpnQCWFhO8U8=" height="190px" width="100">
+            </div>
+    
+            <!-- Core Team -->
+            <div class="team">
+                <h3>Core Team</h3>
+                <p>Oversees decision-making and overall strategy.</p>
+                <img src="https://media.istockphoto.com/id/1302147863/photo/confidence-and-success.jpg?s=612x612&w=0&k=20&c=7iLRo3u3U928RR2_goWZTXfqHvYnZuWbGi78BT9pbKM=" height="190px">
+                <img src="https://images.squarespace-cdn.com/content/v1/5748af8e86db431f0937c1ef/1684872882346-FQZKG7LKC2K1THRM8A57/Core+22-23.jpeg" height="190px">
+                <img src="https://img.freepik.com/free-photo/co-working-people-working-together_23-2149328346.jpg?semt=ais_hybrid" height="190px">
+                <img src="https://img.freepik.com/free-photo/front-view-smiley-team-work_23-2149741178.jpg?semt=ais_hybrid" height="190px">
+            </div>
+        </div>
+    </section>
+    
+    <section id="events" style="background-color:whitesmoke;">
+        <div class="section-header">
+            <h1>Upcoming & Past Events</h1>
+            <p>Explore our latest events and activities!</p>
+        </div>
+        
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="event">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c9eb2c204816829.Y3JvcCwxMzgwLDEwODAsOTI5LDA.jpg" alt="Tech Fest 2024">
+                <div class="event-details">
+                    <h3>Tech Fest 2024</h3>
+                    <p>A showcase of student projects and competitions.</p>
+                    <span class="date">Date: June 12, 2024</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="event">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/902/584/original/sports-background-sports-day-illustration-graphic-design-for-the-decoration-of-gift-certificates-banners-and-flyer-vector.jpg" alt="Sports Meet">
+                <div class="event-details">
+                    <h3>Sports Meet</h3>
+                    <p>Annual inter-department sports competition.</p>
+                    <span class="date">Date: July 10, 2024</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            
+            <!-- Event 3 -->
+            <div class="event">
+                <img src="https://www.artscouncil.ie/uploadedImages/Main_Site/Content/Initiatives/CutlureNight.jpg" alt="Cultural Night">
+                <div class="event-details">
+                    <h3>Cultural Night</h3>
+                    <p>Celebration of music, dance, and drama.</p>
+                    <span class="date">Date: August 5, 2024</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@cresta.org</p>
+            <p>Phone: +123 456 7890</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CRESTA. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="chatbot-container">
+        <div id="chatbox">
+            <p><strong>Chatbot:</strong> Hello! How can I assist you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatbox = document.getElementById("chatbox");
+            const userInput = document.getElementById("userInput");
+            const sendButton = document.getElementById("sendButton");
+
+            function appendMessage(sender, message) {
+                const messageElement = document.createElement("p");
+                messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+                chatbox.appendChild(messageElement);
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }
+
+            function getBotResponse(input) {
+    input = input.toLowerCase().trim(); // Normalize input
+
+    // Greetings
+    if (input.includes("hello") || input.includes("hi")) {
+        return "Hello! How can I assist you today?";
+    } 
+    else if (input.includes("how are you")) {
+        return "I'm just a bot, but I'm doing great! How about you?";
+    } 
+    else if (input.includes("help")) {
+        return "Sure! What do you need help with? Coding, applications, or general queries?";
+    } 
+    else if (input.includes("what is your name")) { 
+        return "I'm the CRESTA Chatbot, here to assist you!";
+    } 
+    else if (input.includes("who created you")) {
+        return "I was created by the CODE CATALYST team to assist users like you!";
+    } 
+    else if (input.includes("link to apply") || input.includes("application form")) { 
+        return `Here is the link to apply: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdb44UAETcLRTVfvoItIhm1Y4p__lZkwoy_uaT-FbdYvwujvA/viewform?usp=header" target="_blank">Apply Here</a>`;
+    } 
+    else if (input.includes("tell me a joke")) { 
+        return "Why do not programmers like nature? It has too many bugs! 🐞";
+    } 
+    else if (input.includes("fun fact")) {
+        return "Did you know? The first computer programmer was Ada Lovelace, in the 1800s!";
+    } 
+    else if (input.includes("what is cresta") || input.includes("about cresta")) {
+        return "CRESTA stands for Computer Regional Engineering and Technology Association. It aims to foster technical, cultural, and leadership skills in students.";
+    } 
+    else if (input.includes("events") || input.includes("upcoming events")) {
+        return "CRESTA organizes various events like coding competitions, workshops, and hackathons. Stay tuned for announcements!";
+    } 
+    else if (input.includes("membership") || input.includes("how to join cresta")) {
+        return "To join CRESTA, fill out the application form available here: <a href='https://docs.google.com/forms/d/e/1FAIpQLSczHUQrzRD0XvuSX_z8F309MbEyqlFRToIL6ZgyAL8adb_YVA/viewform?usp=dialog' target='_blank'>Join Now</a>.";
+    }
+    else {
+        return "I'm sorry, I don't understand. Can you please rephrase your question?";
+    }
+}
+
+
+            sendButton.addEventListener("click", function () {
+                const userText = userInput.value.trim();
+                if (userText) {
+                    appendMessage("You", userText);
+                    const botResponse = getBotResponse(userText);
+                    setTimeout(() => appendMessage("Chatbot", botResponse), 500);
+                    userInput.value = "";
+                }
+            });
+
+            userInput.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    sendButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>  
