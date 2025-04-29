@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    #slider {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 30%; /* Adjust this to fit all images */
+      animation: slide 16s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+      transition: transform 1s ease-in-out; /* Smooth transition */
+    }
+
+    @keyframes slide {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures images cover the whole area */
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(200px, 1fr) );
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item .caption {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slider">
+  <div class="slides">
+    <!-- Slide 1 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/xEvZvsO0Oii_V0rDo4gi-LYPGIrppagoQe8GlfReq4g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllXRTJORGt5/TmprdE5EQTRNQzAw/T1RRMExUZzVaRFl0/TWpabFltRmhZMkpq/TkdGa1hrRXlYa0Zx/Y0djQC5qcGc" alt="Doraemon">
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/Kl_rGTmP8DCM-773SBwVL_LUPPMT1ufuapTnP7HqYpg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/MHFwZXBwbjFoODg2/MS5qcGc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9YzZkMDEyZTk3/YmM0NTg3N2I5N2Y2/NWU3OWEwOWVmNmM5/NmJlMjRjZg" alt="Naruto">
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/oadWPLy4yGi6tdPDUPo4GlNEHOPhoMDpMBG7w4bgG4Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllUSXdZemsz/WW1RdFptTXdOUzAw/WkRBd0xUazVZMk10/T1RFd09ERmxabUV4/TXpsaVhrRXlYa0Zx/Y0djQC5qcGc" alt="Solo Leveling">
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/cm2iV66h0Q130XjF-RDCzTSUDsSETg9uMUSWZNbbyg8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDkvYXR0YWNrLW9u/LXRpdGFuLTIwMTMt/YW5pbWUtcG9zdGVy/LmpwZw" alt="Attack on Titan">
+    </div>
+
+ <!-- Slide 5 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/_hA1XdhwlBARIKwGAKj3E5vxKfiDZPSh-Sfwd6jB9kk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1UTmpOR1U0/TlRVdFltVmpNeTAw/WWpSaUxUa3hNV1V0/Tnpaa01ETmlZalpo/Tm1WaVhrRXlYa0Zx/Y0djQC5qcGc" alt="Solo Leveling">
+    </div>
+
+ <!-- Slide 6 -->
+    <div class="slide">
+      <img src="https://imgs.search.brave.com/BwZdJGWIiDNLJF8wBhAR3CWwQAkjyfLRHK-PUcfry1g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5tRmlNMkZr/WVRZdFkyRmlPUzAw/WldKa0xUa3lPVGd0/Tm1GbU9ESTROamN3/TkRnelhrRXlYa0Zx/Y0djQC5qcGc" alt="Solo Leveling">
+    </div>
+
+
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
